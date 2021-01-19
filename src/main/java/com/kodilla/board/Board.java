@@ -17,7 +17,7 @@ import java.util.*;
 import static java.lang.Thread.sleep;
 
 public class Board {
-    private static HashMap<Coordinates, PawnClass> board = new HashMap<>();
+    private final static HashMap<Coordinates, PawnClass> board = new HashMap<>();
 
     private boolean isMark = false;
     private boolean newKick = false;
@@ -27,12 +27,9 @@ public class Board {
     private Set<Coordinates> possibleKick = new HashSet<>();
     private Set<Coordinates> possibleTake = new HashSet<>();
 
-    private boolean isGameEnd = false;
-    private int roundWithoutKick = 0;
-
 
     private boolean aiRound = false;
-    private AiLogic computer = new AiLogic();
+    private final AiLogic computer = new AiLogic();
 
     public Board() {
         addPawn();
@@ -40,8 +37,6 @@ public class Board {
     public static Map<Coordinates,PawnClass> getBoard() {
         return board;
     }
-
-
 
 
     private void addPawn() {
@@ -350,14 +345,9 @@ public class Board {
             }
         }
 
-        if(roundWithoutKick == 12) {
-            isGameEnd = true;
-            new EndGame("Draw. Maybe you try again?");
-        } else if(possibleMovesWhite.size() == 0 || pawnWhiteCount <= 1) {
-            isGameEnd = true;
+        if(possibleMovesWhite.size() == 0 || pawnWhiteCount <= 1) {
             new EndGame("You loss. Maybe you try again?");
         } else if(possibleMovesBlack.size() == 0 || pawnBlackCount <= 1) {
-            isGameEnd = true;
             new EndGame("You win! Congratulations! :)");
         }
     }

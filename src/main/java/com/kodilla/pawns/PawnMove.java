@@ -7,12 +7,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class PawnMove {
-    private Coordinates coordinates;
-    private PawnClass pawn;
+    private final Coordinates coordinates;
+    private final PawnClass pawn;
 
-    private Set<Coordinates> canGo = new HashSet<>();
-    private Set<Coordinates> canForce = new HashSet<>();
-    private  Set<Coordinates> possibleTake = new HashSet<>();
+    private final Set<Coordinates> canGo = new HashSet<>();
+    private final Set<Coordinates> canForce = new HashSet<>();
+    private final Set<Coordinates> possibleTake = new HashSet<>();
 
     private boolean force = false;
     private Coordinates forceCoordinates = null;

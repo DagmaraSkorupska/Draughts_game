@@ -4,8 +4,8 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public class PawnClass {
-    private Pawn pawn;
-    private PawnColor color;
+    private final Pawn pawn;
+    private final PawnColor color;
 
     public PawnClass(Pawn pawn, PawnColor color) {
         this.pawn = pawn;

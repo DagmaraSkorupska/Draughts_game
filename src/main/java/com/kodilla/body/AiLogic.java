@@ -9,10 +9,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class AiLogic {
-    private Random random = new Random();
+    private final Random random = new Random();
 
-    private Set<Coordinates> canForce = new HashSet<>();
-    private Set<Coordinates> canGo = new HashSet<>();
+    private final Set<Coordinates> canForce = new HashSet<>();
+    private final Set<Coordinates> canGo = new HashSet<>();
     private boolean beForceGo = false;
 
     public void getData(){
