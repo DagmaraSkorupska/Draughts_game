@@ -38,10 +38,10 @@ Hitting the queen is possible with a break on the diagonal line and by jumping t
  
 # 1. Screenshots
 Introduction:
-![alt text](https://github.com/DagmaraSkorupska/Draughts_game/Introduction.png?raw=true)
+![alt text](https://github.com/DagmaraSkorupska/Draughts_game/blob/master/Introduction.png?raw=true)
 
 Beating:
-![alt text](https://github.com/DagmaraSkorupska/Draughts_game/beating.png?raw=true)
+![alt text](https://github.com/DagmaraSkorupska/Draughts_game/blob/master/beating.png?raw=true)
 
 # 2. Technologies
 - Java
