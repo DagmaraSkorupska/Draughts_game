@@ -35,3 +35,14 @@ Queens may move in one movement any position forward or diagonally, stopping in 
 Hitting the queen is possible with a break on the diagonal line and by jumping the opponent's piece (or the queen),
  behind him there must be at least one free space - the queen jumps to any of these squares and may still capture
  on the same or perpendicular line.
+ 
+# 1. Screenshots
+Introduction:
+![alt text](https://github.com/DagmaraSkorupska/Draughts_game/Introduction.png?raw=true)
+
+Beating:
+![alt text](https://github.com/DagmaraSkorupska/Draughts_game/beating.png?raw=true)
+
+# 2. Technologies
+- Java
+- JavaFX
