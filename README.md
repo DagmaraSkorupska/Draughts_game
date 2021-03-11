@@ -1,5 +1,5 @@
 
-GAME RULES:
+# GAME RULES:
 
 Arrangement of pieces to start the game.
 The classic checkers game (also known as Brazilian checkers) is played on a board with a size of 8 × 8 fields,
