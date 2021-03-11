@@ -2,22 +2,20 @@ package com.kodilla.body;
 
 import com.kodilla.board.Coordinates;
 import com.kodilla.pawns.PawnClass;
-import com.kodilla.pawns.PawnColor;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.VPos;
-import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 
 
 public class BoardLogic {
-    private static GridPane gridPane = new GridPane();
-    private static Image lightMove = new Image("possibility.png");
+    private final static GridPane gridPane = new GridPane();
+    private final static Image lightMove = new Image("possibility.png");
 
     public BoardLogic(){
-        createBoardBacground();
+        createBoardBackground();
         generateEmptyBoard();
     }
 
@@ -25,7 +23,7 @@ public class BoardLogic {
         return gridPane;
     }
 
-    private void createBoardBacground(){
+    private void createBoardBackground(){
         Image background = new Image("board.png");
         BackgroundSize backgroundSize = new BackgroundSize(750, 750, false, false, true, false);
         BackgroundImage backgroundImage = new BackgroundImage(background, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, backgroundSize);
